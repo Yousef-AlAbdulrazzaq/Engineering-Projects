@@ -1,0 +1,196 @@
+
+**** 12/16/25 19:15:22 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_16.5_Lite\tools\pspice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 800ms 250ms 100u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CE207-PD1
+R_R2         N00301 N00294  10k TC=0,0 
+R_R3         0 N00301  10k TC=0,0 
+R_R4         N00294 N00372  4.7k TC=0,0 
+R_R5         N00372 N00436  100k TC=0,0 
+R_R6         0 N00354  10k TC=0,0 
+C_C1         0 N00276  10u  TC=0,0 
+C_C2         N00436 N00372  1u  TC=0,0 
+X_U1         N00301 N00276 N01356 N03127 N00294 uA741
+X_U2         N00354 N00372 N01362 N02217 N00436 uA741
+V_V1         0 N02217 12V
+V_V2         N01362 0 12V
+V_V3         N01356 0 12V
+R_R1         N00276 N00294  1k TC=0,0 
+V_V4         0 N03127 12V
+
+**** RESUMING a.cir ****
+.END
+
+**** 12/16/25 19:15:22 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U2.dx         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1            
+
+
+**** 12/16/25 19:15:22 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.qx         
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 12/16/25 19:15:22 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00276)-678.9E-06 (N00294)-599.2E-06 (N00301)-698.2E-06 (N00354)-797.3E-06     
+
+(N00372)-778.0E-06 (N00436)     .0034 (N01356)   12.0000 (N01362)   12.0000     
+
+(N02217)  -12.0000 (N03127)  -12.0000 (X_U1.6) 54.48E-09 (X_U1.7)-592.8E-06     
+
+(X_U1.8)-592.8E-06 (X_U1.9)    0.0000 (X_U2.6)-321.4E-09 (X_U2.7)     .0034     
+
+(X_U2.8)     .0034 (X_U2.9)    0.0000 (X_U1.10)    -.6084                       
+
+(X_U1.11)   11.9600                   (X_U1.12)   11.9600                       
+
+(X_U1.13)    -.5945                   (X_U1.14)    -.5945                       
+
+(X_U1.53)   11.0000                   (X_U1.54)  -11.0000                       
+
+(X_U1.90) 127.7E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                       
+
+(X_U2.10)    -.6085                   (X_U2.11)   11.9600                       
+
+(X_U2.12)   11.9600                   (X_U2.13)    -.5946                       
+
+(X_U2.14)    -.5946                   (X_U2.53)   11.0000                       
+
+(X_U2.54)  -11.0000                   (X_U2.90) 41.72E-06                       
+
+(X_U2.91)   40.0000                   (X_U2.92)  -40.0000                       
+
+(X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.337E-03
+    V_V2        -1.337E-03
+    V_V3        -1.337E-03
+    V_V4        -1.337E-03
+    X_U1.vb      5.448E-13
+    X_U1.vc      1.100E-11
+    X_U1.ve      1.100E-11
+    X_U1.vlim    1.277E-07
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U2.vb     -3.214E-12
+    X_U2.vc      1.100E-11
+    X_U2.ve      1.100E-11
+    X_U2.vlim    4.172E-08
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   6.42E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/16/25 19:15:22 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .38
+

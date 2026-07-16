@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-a"  [ C:\OrCAD\OrCAD_16.5_Lite\tools\capture\ce207-pd1-pspicefiles\schematic1\a.sim ] 
+
+** Creating circuit file "a.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_16.5_Lite\tools\pspice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 800ms 250ms 100u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
