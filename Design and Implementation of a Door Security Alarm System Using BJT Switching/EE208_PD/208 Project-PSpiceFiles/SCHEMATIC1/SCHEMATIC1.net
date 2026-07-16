@@ -1,0 +1,12 @@
+* source 208 PROJECT
+V_V1         N00314 0 11.96V
+Q_Q1         N00390 N00385 0 Q2N2222
+Q_Q2         N00473 N00390 0 Q2N3904
+R_R1         N00309 N00314  1k TC=0,0 
+R_R2         N00390 N00314  2.2k TC=0,0 
+R_R3         N02870 N00314  330 TC=0,0 
+R_Buzzer         N00473 N00314  100 TC=0,0 
+D_D1         N00473 N00314 D1N4002 
+D_D2         N02870 N00473 D1N4148 
+X_U1         N00385 N00309 Sw_tClose PARAMS: tClose=5s ttran=1u Rclosed=0.01
++  Ropen=1Meg

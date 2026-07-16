@@ -1,0 +1,87 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+        ("R")
+        ("Sw_tClose")
+    )
+    ("instances"
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"11.96V")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"2.2k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"330")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Buzzer"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Buzzer")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"100")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("U1"
+            ("device_name"	"Sw_tClose")
+            ("pspice_path"	"X_U1")
+            ("level"	"0")
+            ("model_params"
+                ("TCLOSE"
+                    ("value"	"5s")
+                    ("pspice_param"	"tClose")
+                )
+                ("TTRAN"
+                    ("value"	"1u")
+                    ("pspice_param"	"ttran")
+                )
+                ("RCLOSED"
+                    ("value"	"0.01")
+                    ("pspice_param"	"Rclosed")
+                )
+                ("ROPEN"
+                    ("value"	"1Meg")
+                    ("pspice_param"	"Ropen")
+                )
+            )
+        )
+    )
+)
